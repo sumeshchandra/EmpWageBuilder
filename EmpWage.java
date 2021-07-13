@@ -1,7 +1,7 @@
 public class EmpWage {
 
+        int IS_FULL_TIME = 1;
 	public static void main(String[] args) {
-	System.out.println("Hello guys");
 	
 	int IS_FULL_TIME = 1;
 	
