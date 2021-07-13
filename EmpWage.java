@@ -1,13 +1,17 @@
 public class EmpWage {
 
-        int IS_FULL_TIME = 1;
+	static final int IS_FULL_TIME =1;
+	static final int EMP_RATE_PER_HRS=20;
 	public static void main(String[] args) {
 	System.out.println("Hello guys, Welcome to wage computation ");
-
+	int empHrs = 0;
+	int empWage = 0;
 	double empCheck = Math.floor(Math.random() * 10)% 2;
 	if (empCheck == IS_FULL_TIME)
-		System.out.println("Employee is present");
-	else
-		System.out.println("Employee is absent");
-	}
+	   empHrs=8;
+ 	else
+    	   empHrs=0;
+	empWage=empHrs * EMP_RATE_PER_HRS;
+	System.out.println("Emp Wage: " + empWage );
+	 }
 }
